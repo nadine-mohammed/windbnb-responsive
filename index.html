@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./images/devchallenges.png" rel="icon" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <title>windbnb</title>
+  </head>
+  <body>
+    <div class="container-shadow" id="container-shadow"></div>
+    <div class="main-search-container" id="main-search-container">
+      <div class="main-search">
+        <div class="main-input" id="location">
+          <div class="main-label">Location</div>
+          <input
+            class="userData"
+            type="text"
+            placeholder="Location"
+            id="inner-location"
+            readonly
+          />
+          <ul class="user-options" id="location-options"></ul>
+        </div>
+        <div class="main-input" id="guests">
+          <div class="main-label">guests</div>
+          <input
+            class="userData"
+            type="text"
+            placeholder="Add guests"
+            id="inner-guests"
+            readonly
+          />
+          <ul class="user-options" id="guests-options">
+            <li class="user-guest-age">
+              <div class="guest-op-title">Adults</div>
+              <div class="guest-op-details">Ages 13 or above</div>
+              <div class="manage-age">
+                <button class="sign-btn" id="minus-adult-btn">-</button>
+                <div class="guests-num" id="num-adult">0</div>
+                <button class="sign-btn" id="plus-adult-btn">+</button>
+              </div>
+            </li>
+            <li class="user-guest-age">
+              <div class="guest-op-title">Children</div>
+              <div class="guest-op-details">Ages 2-12</div>
+              <div class="manage-age">
+                <button class="sign-btn" id="minus-child-btn">-</button>
+                <div class="guests-num" id="num-child">0</div>
+                <button class="sign-btn" id="plus-child-btn">+</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="main-search-btn" id="main-search-btn">
+          <span class="material-icons"> search </span>
+          Search
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="stays-filter">
+        <img src="./images/logo.svg" class="windbnb-logo" />
+        <div class="search-inputs-container">
+          <input
+            class="search-i"
+            id="outer-location"
+            placeholder="Location"
+            type="text"
+            readonly
+          />
+          <input
+            class="search-i"
+            id="outer-guests"
+            placeholder="Add guests"
+            type="text"
+            readonly
+          />
+          <span class="material-icons delete-ico-btn" id="delete-ico-btn">
+            delete
+          </span>
+        </div>
+      </div>
+
+      <div class="available-stays" id="available-stays">
+        <div class="stays-title">
+          <div class="title">stays in finland</div>
+          <div class="num-of-stays" id="num-of-stays"></div>
+        </div>
+        <div class="stays" id="stays"></div>
+        <h1 class="no-data" id="no-data">No Data Available</h1>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
