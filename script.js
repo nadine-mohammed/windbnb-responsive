@@ -34,6 +34,11 @@ resetBtn.addEventListener("click", function () {
   homeGuests.value = "";
   homeLocation.value = "";
   innerLocation.value = "";
+  innerNumAdult.innerText = "0";
+  innerNumChild.innerText = "0";
+  guestsNumAdult = 0;
+  guestsNumChild = 0;
+  totalGuests = 0;
   setStaysData();
 });
 ///--------------
